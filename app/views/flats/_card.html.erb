@@ -1,0 +1,16 @@
+<div class="card-with-margin">
+  <div class="card">
+    <div class="card-image" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%=locals[:image][locals[:flat].id - 1]%>);"></div>
+    <div class="card-description">
+      <h2><%= locals[:flat].name %></h2>
+      <p><%= locals[:flat].description %></p>
+      <i class="fas fa-user-plus">   <%= locals[:flat].number_of_guests %></i>
+      <i class="fas fa-dollar-sign">   <%= locals[:flat].price_per_night %></i>
+
+    </div>
+    <div>
+      <%= render "footer", flat:locals[:flat]%>
+    </div>
+  </div>
+
+</div>

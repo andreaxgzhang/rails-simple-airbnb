@@ -1,0 +1,11 @@
+<div class="container">
+
+  <h2 class="for-form">All our Flats</h2>
+  <div class="row">
+    <% @flats.each do |flat| %>
+      <div class="col-xs-12 col-sm-4">
+        <%= render 'card', locals:{ flat: flat, image:@image } %>
+      </div>
+    <% end %>
+  </div>
+</div>

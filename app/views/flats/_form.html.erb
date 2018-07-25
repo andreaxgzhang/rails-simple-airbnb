@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <div class="col-6 m-auto">
+      <div class="flat-form">
+          <%= simple_form_for [flat] do |f|%>
+            <%= f.input :name %>
+            <%= f.input :address %>
+            <%= f.input :description %>
+            <%= f.input :price_per_night %>
+            <%= f.input :number_of_guests %>
+            <%= f.submit "Add a new flat", :class => "btn btn-success" %>
+            <%= link_to "cancle", flats_path, :class => "btn btn-cancle" %>
+          <% end %>
+      </div>
+    </div>
+  </div>
+</div>
